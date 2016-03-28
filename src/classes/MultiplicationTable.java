@@ -1,9 +1,4 @@
-package classes;
-
-/**
- * Created by jyheo on 2016-03-26.
- */
-public class MultiplicationTable {
+public class abcd {
     private int number;
     private int max_number = 9;
 
@@ -36,12 +31,13 @@ public class MultiplicationTable {
     }
 
     public static void main(String[] args) {
-        MultiplicationTable mtable = new MultiplicationTable();
+        abcd mtable = new abcd();
+        int n;
+        mtable.setMaxNumber(9);
 
-        mtable.max_number = 19; // BAD practice!
-        mtable.setMaxNumber(19);
-
-        mtable.setNumber(4);
-        mtable.printTable();
+        for(n=2; n<10; n++) {
+            mtable.setNumber(n);
+            mtable.printTable();
+        }
     }
 }
